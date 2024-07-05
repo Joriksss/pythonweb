@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.edit .form-container {
+    display: none;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.text-header {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.inpt1, .inpt2, .inpt3, .btn {
+    padding: 10px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.task {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.task h1, .task h2, .task h3 {
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+.task h2 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.rec {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.edit, .X {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.edit:hover, .X:hover {
+    background-color: #f4f4f4;
+}

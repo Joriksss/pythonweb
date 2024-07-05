@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="header">
+        <h1 class="text-header">Edit</h1>
+        <form method="POST" class=form>
+          <input type="text" name="title" placeholder="Title" class="inpt1" value="{{ edits.title }}">
+          <input type="text" name="desc" placeholder="Description" class="inpt2" value="{{ edits.desc }}">
+          <input type="text" name="price" placeholder="Price" class="inpt3" value="{{ edits.price }}">
+          <input type="submit" class="btn" value="save">
+        </form>
+    </div>
+</div>
+{% endblock %}

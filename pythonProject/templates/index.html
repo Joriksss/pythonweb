@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technical</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1 class="text-header">Technical</h1>
+        <form method="POST" class=form>
+          <input type="text" name="title" placeholder="Title" class="inpt1">
+          <input type="text" name="desc" placeholder="Description" class="inpt2">
+          <input type="text" name="price" placeholder="Price" class="inpt3">
+          <input type="submit" value="add" class="btn">
+        </form>
+    </div>
+    {% for item in items %}
+    <div class="task">
+        <h1>{{ item.title }}</h1>
+        <h2>{{ item.desc }}</h2>
+        <h3>{{ item.price }} р.</h3>
+        <div class="rec">
+            <a href="{{ url_for('edit', item_id=item.id)}}" class="edit">Edit</a>
+            <a href="{{ url_for('delete', item_id=item.id)}}" class="X">☓</a>
+        </div>
+    </div>
+    {% endfor %}
+</body>
+</html>
